@@ -4,6 +4,21 @@ Esta guía te permite desplegar la API en la nube para que recruiters y entrevis
 
 ---
 
+## ⚡ Alternativa sin tarjeta: Gitpod
+
+Si no quieres añadir tarjeta en Render/Railway/Fly.io, puedes usar **Gitpod**:
+
+1. Añade el botón "Open in Gitpod" en tu README (ya incluido en `README_PUBLIC.md`)
+2. Cualquiera puede abrir el repo en Gitpod y la API se ejecuta automáticamente
+3. Gitpod da una URL pública temporal para probar los endpoints
+4. **No requiere tarjeta** para el usuario del repo ni para quien prueba
+
+Solo necesitas subir el archivo `.gitpod.yml` (ya incluido) a tu repositorio.
+
+---
+
+---
+
 ## Requisitos previos
 
 - **Cuenta en GitHub** (el código debe estar en un repositorio)

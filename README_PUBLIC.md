@@ -83,9 +83,15 @@ class BudgetappApplicationTests {
 
 ## 🚀 Cómo ejecutar
 
-### Opción A: Probar la API en vivo (desplegada)
+### Opción A: Probar en Gitpod (sin instalar nada)
 
-Si la API está desplegada, puedes probarla directamente. Sustituye `TU-URL` por la URL real:
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/fcomartin94/budgetapp)
+
+Abre el proyecto en Gitpod y la API se ejecutará automáticamente. Gitpod te dará una URL pública para probar los endpoints.
+
+### Opción B: Probar la API en vivo (si está desplegada)
+
+Si la API está desplegada en Render/Railway/etc., puedes probarla directamente. Sustituye `TU-URL` por la URL real:
 
 ```bash
 curl https://TU-URL/api/saldo
@@ -94,7 +100,7 @@ curl -X POST https://TU-URL/api/transacciones/simple \
   -d '{"descripcion": "Nómina", "monto": 1800.0, "tipo": "INGRESO"}'
 ```
 
-### Opción B: Ejecutar en local
+### Opción C: Ejecutar en local
 
 **Requisitos**: Java 25+, Maven 3.9+
 
