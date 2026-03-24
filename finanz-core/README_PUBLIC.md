@@ -2,6 +2,8 @@
 
 > Aplicación de gestión de presupuesto personal por consola, construida en **Java puro** sin frameworks externos. Diseñada con una arquitectura en capas real, persistencia en CSV y tests unitarios propios escritos desde cero.
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/fcomartin94/finanz-core)
+
 ---
 
 ## 🎯 ¿Qué hace esta app?
