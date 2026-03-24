@@ -4,6 +4,8 @@ Repositorio monorepo con **3 aplicaciones independientes** del mismo dominio fin
 
 Cada app vive en su carpeta, tiene su propio README y se puede ejecutar por separado.
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/fcomartin94/finanz-core)
+
 ## Estructura del repositorio
 
 ```text

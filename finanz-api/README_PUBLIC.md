@@ -85,7 +85,7 @@ class FinanzApiApplicationTests {
 
 ### Opción A: Probar en GitHub Codespaces (sin instalar nada, sin tarjeta)
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/fcomartin94/finanz-core)
+Usa el botón de Codespaces del README raíz del repositorio.
 
 **Guía para recruiters** — 3 pasos:
 
