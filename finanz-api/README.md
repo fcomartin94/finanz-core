@@ -1,87 +1,11 @@
-# Finanz API (`finanz-api/`)
+# Finanz API Documentation
 
-API REST para gestion de presupuesto personal construida con Spring Boot, Spring Data JPA e H2.
+- Espanol: `README_ES.md`
+- English: `README_EN.md`
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/fcomartin94/finanz-core)
-
-Si buscas una version corta y orientada a portfolio/demo, revisa `README_PUBLIC.md`.
-
----
-
-## Indice
-
-- [1. Estado actual](#1-estado-actual)
-- [2. Ejecucion rapida](#2-ejecucion-rapida)
-- [3. Endpoints principales](#3-endpoints-principales)
-- [4. Estructura tecnica](#4-estructura-tecnica)
-- [5. Configuracion](#5-configuracion)
-- [6. Relacion con el monorepo](#6-relacion-con-el-monorepo)
-
----
-
-## 1. Estado actual
-
-Estado verificado:
-
-- API funcional con Spring Boot + JPA + H2.
-- Suite de tests verde.
-- Endpoints de alta, consulta, borrado y resumen operativos.
-
----
-
-## 2. Ejecucion rapida
-
-Desde la raiz del repositorio:
-
-```bash
-cd finanz-api
-./mvnw spring-boot:run
-```
-
-La API queda disponible en `http://localhost:8080`.
-
-Probar rapido:
-
-```bash
-curl http://localhost:8080/api/saldo
-```
-
-Tests:
-
-```bash
-./mvnw test
-```
-
-## 3. Endpoints principales
-
-- `POST /api/transacciones`
-- `POST /api/transacciones/simple`
-- `GET /api/transacciones`
-- `GET /api/transacciones/{id}`
-- `DELETE /api/transacciones/{id}`
-- `GET /api/saldo`
-- `GET /api/saldo/mes-actual`
-- `GET /api/resumen/mes-actual`
-
-## 4. Estructura tecnica
-
-```text
-finanz-api/src/main/java/com/finanzapi/
-├── FinanzApiApplication.java
-├── controller/
-├── service/
-├── repository/
-└── model/
-```
-
-## 5. Configuracion
-
-- Perfil local: `src/main/resources/application.properties`
-- Perfil cloud: `src/main/resources/application-cloud.properties`
-- Guia de despliegue: `DEPLOY.md`
-
-## 6. Relacion con el monorepo
-
-- `finanz-core/` contiene la version CLI del mismo dominio.
-- `finanz-app/` contiene la app Android.
-- `finanz-api/` es la capa backend HTTP para el mismo modelo de negocio.
+- Public (ES): `README_PUBLIC_ES.md`
+- Public (EN): `README_PUBLIC_EN.md`
+- Deploy (ES): `DEPLOY_ES.md`
+- Deploy (EN): `DEPLOY_EN.md`
+- Help (ES): `HELP_ES.md`
+- Help (EN): `HELP_EN.md`

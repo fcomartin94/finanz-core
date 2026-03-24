@@ -118,7 +118,7 @@ The API is available at `http://localhost:8080`.
 
 ### Deploy to the cloud (Render, Railway, Fly.io)
 
-See **[DEPLOY.md](DEPLOY.md)** for the complete deployment guide.
+See **[DEPLOY_ES.md](DEPLOY_ES.md)** for the complete deployment guide.
 
 ### Run the tests
 

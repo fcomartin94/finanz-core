@@ -4,7 +4,7 @@ REST API for personal budget management built with Spring Boot, Spring Data JPA 
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/fcomartin94/finanz-core)
 
-If you're looking for a short, portfolio/demo-oriented version, check out `README_PUBLIC.md`.
+If you're looking for a short, portfolio/demo-oriented version, check out `README_PUBLIC_ES.md`.
 
 ---
 
@@ -78,7 +78,7 @@ finanz-api/src/main/java/com/finanzapi/
 
 - Local profile: `src/main/resources/application.properties`
 - Cloud profile: `src/main/resources/application-cloud.properties`
-- Deployment guide: `DEPLOY.md`
+- Deployment guide: `DEPLOY_ES.md`
 
 ## 6. Relationship with the monorepo
 
