@@ -8,7 +8,28 @@ Si buscas una version corta y orientada a portfolio/demo, revisa `README_PUBLIC.
 
 ---
 
-## Ejecucion rapida
+## Indice
+
+- [1. Estado actual](#1-estado-actual)
+- [2. Ejecucion rapida](#2-ejecucion-rapida)
+- [3. Endpoints principales](#3-endpoints-principales)
+- [4. Estructura tecnica](#4-estructura-tecnica)
+- [5. Configuracion](#5-configuracion)
+- [6. Relacion con el monorepo](#6-relacion-con-el-monorepo)
+
+---
+
+## 1. Estado actual
+
+Estado verificado:
+
+- API funcional con Spring Boot + JPA + H2.
+- Suite de tests verde.
+- Endpoints de alta, consulta, borrado y resumen operativos.
+
+---
+
+## 2. Ejecucion rapida
 
 Desde la raiz del repositorio:
 
@@ -31,9 +52,7 @@ Tests:
 ./mvnw test
 ```
 
----
-
-## Endpoints principales
+## 3. Endpoints principales
 
 - `POST /api/transacciones`
 - `POST /api/transacciones/simple`
@@ -44,9 +63,7 @@ Tests:
 - `GET /api/saldo/mes-actual`
 - `GET /api/resumen/mes-actual`
 
----
-
-## Estructura tecnica
+## 4. Estructura tecnica
 
 ```text
 finanz-api/src/main/java/com/finanzapi/
@@ -57,17 +74,13 @@ finanz-api/src/main/java/com/finanzapi/
 └── model/
 ```
 
----
-
-## Configuracion
+## 5. Configuracion
 
 - Perfil local: `src/main/resources/application.properties`
 - Perfil cloud: `src/main/resources/application-cloud.properties`
 - Guia de despliegue: `DEPLOY.md`
 
----
-
-## Relacion con el monorepo
+## 6. Relacion con el monorepo
 
 - `finanz-core/` contiene la version CLI del mismo dominio.
 - `finanz-app/` contiene la app Android.

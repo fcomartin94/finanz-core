@@ -2,6 +2,8 @@
 
 Aplicacion Android nativa para control financiero personal, desarrollada con Kotlin, Jetpack Compose y Room.
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/fcomartin94/finanz-core)
+
 Si buscas una version corta y orientada a portfolio/demo, revisa `README_PUBLIC.md`.
 
 ---
