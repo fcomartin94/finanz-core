@@ -1,4 +1,4 @@
-# 🚀 Guía de despliegue — BudgetApp
+# 🚀 Guía de despliegue — Finanz API
 
 Esta guía te permite desplegar la API en la nube para que recruiters y entrevistadores puedan probarla sin instalar nada.
 
@@ -33,7 +33,7 @@ Archivos necesarios: `.devcontainer/devcontainer.json` (ya incluido).
    git init
    git add .
    git commit -m "Initial commit"
-   git remote add origin https://github.com/TU_USUARIO/budgetapp.git
+   git remote add origin https://github.com/TU_USUARIO/finanz-api.git
    git push -u origin main
    ```
 
@@ -51,7 +51,7 @@ Archivos necesarios: `.devcontainer/devcontainer.json` (ya incluido).
 
 5. **Deploy**: Render construirá la imagen Docker y desplegará. Obtendrás una URL como:
    ```
-   https://budgetapp-api.onrender.com
+   https://finanz-api.onrender.com
    ```
 
 6. **Prueba la API**:
@@ -100,7 +100,7 @@ Archivos necesarios: `.devcontainer/devcontainer.json` (ya incluido).
 
 3. **Despliega** (desde la raíz del proyecto):
    ```bash
-   cd budgetapp
+   cd finanz-api # carpeta del módulo Finanz API
    fly launch
    ```
    - Responde las preguntas (nombre de app, región, etc.)
@@ -111,7 +111,7 @@ Archivos necesarios: `.devcontainer/devcontainer.json` (ya incluido).
    fly deploy
    ```
 
-5. **URL**: `https://budgetapp-api.fly.dev` (o la que te asigne Fly)
+5. **URL**: `https://finanz-api.fly.dev` (o la que te asigne Fly)
 
 ---
 

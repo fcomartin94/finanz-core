@@ -1,4 +1,4 @@
-package com.budgetapp.budgetapp.model;
+package com.finanzapi.model;
 
 import jakarta.persistence.*;
 import java.time.LocalDate;

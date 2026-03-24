@@ -1,9 +1,9 @@
-package com.budgetapp.budgetapp;
+package com.finanzapi;
 
-import com.budgetapp.budgetapp.model.TipoTransaccion;
-import com.budgetapp.budgetapp.model.Transaccion;
-import com.budgetapp.budgetapp.repository.TransaccionRepository;
-import com.budgetapp.budgetapp.service.BudgetService;
+import com.finanzapi.model.TipoTransaccion;
+import com.finanzapi.model.Transaccion;
+import com.finanzapi.repository.TransaccionRepository;
+import com.finanzapi.service.BudgetService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 @ActiveProfiles("test")
-class BudgetappApplicationTests {
+class FinanzApiApplicationTests {
 
 	@Autowired
 	private BudgetService servicio;

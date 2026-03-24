@@ -1,8 +1,8 @@
-package com.budgetapp.budgetapp.controller;
+package com.finanzapi.controller;
 
-import com.budgetapp.budgetapp.controller.dto.SimpleTransaccionRequest;
-import com.budgetapp.budgetapp.model.Transaccion;
-import com.budgetapp.budgetapp.service.BudgetService;
+import com.finanzapi.controller.dto.SimpleTransaccionRequest;
+import com.finanzapi.model.Transaccion;
+import com.finanzapi.service.BudgetService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

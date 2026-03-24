@@ -1,12 +1,12 @@
-# BudgetApp REST (`budgetapp/`)
+# Finanz API (`finanz-api/`)
 
 API REST para gestion de presupuesto personal construida con Spring Boot, Spring Data JPA e H2.
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/fcomartin94/budgetapp)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/fcomartin94/finanz-api)
 
 **Probar sin instalar nada** (ideal para recruiters):
 1. Clic en el boton de arriba → abre el proyecto en GitHub Codespaces
-2. En la terminal: `./mvnw spring-boot:run` (espera a ver "Started BudgetappApplication")
+2. En la terminal: `./mvnw spring-boot:run` (espera a ver "Started FinanzApiApplication")
 3. Pestana **PORTS** (abajo) → puerto 8080 → **"Open in Browser"**
 4. Veras una pagina con enlaces para probar la API. No requiere tarjeta de credito.
 
@@ -43,7 +43,7 @@ Validado localmente:
 Comandos ejecutados:
 
 ```bash
-cd budgetapp
+cd finanz-api # carpeta del módulo Finanz API
 ./mvnw -DskipTests compile
 ./mvnw test
 ```
@@ -82,8 +82,8 @@ La API permite:
 Estructura principal:
 
 ```text
-budgetapp/src/main/java/com/budgetapp/budgetapp/
-├── BudgetappApplication.java
+finanz-api/src/main/java/com/finanzapi/
+├── FinanzApiApplication.java
 ├── controller/
 │   ├── BudgetController.java
 │   └── dto/
@@ -214,7 +214,7 @@ Request:
 ### Ejecutar app
 
 ```bash
-cd budgetapp
+cd finanz-api # carpeta del módulo Finanz API
 ./mvnw spring-boot:run
 ```
 
@@ -263,9 +263,9 @@ Si se quiere persistencia en archivo como indica la URL definida, hay que correg
 
 ## 10. Relacion con otros modulos
 
-- `budgetapp` es el backend REST.
-- `androidapp` consume esta API y motivó el endpoint simplificado de alta.
-- `src` contiene una version anterior/alternativa del dominio y logica de negocio.
+- Finanz API (`finanz-api/`) es el backend REST.
+- `finanz-app` consume esta API y motivó el endpoint simplificado de alta.
+- `finanz-core` contiene una version anterior/alternativa del dominio y logica de negocio.
 
 ---
 

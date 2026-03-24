@@ -1,5 +1,5 @@
 {
-  "name": "BudgetApp - Spring Boot",
+  "name": "Finanz API - Spring Boot",
   "image": "mcr.microsoft.com/devcontainers/java:1-21-bookworm",
 
   "features": {

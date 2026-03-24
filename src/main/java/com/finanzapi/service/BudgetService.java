@@ -1,8 +1,8 @@
-package com.budgetapp.budgetapp.service;
+package com.finanzapi.service;
 
-import com.budgetapp.budgetapp.model.TipoTransaccion;
-import com.budgetapp.budgetapp.model.Transaccion;
-import com.budgetapp.budgetapp.repository.TransaccionRepository;
+import com.finanzapi.model.TipoTransaccion;
+import com.finanzapi.model.Transaccion;
+import com.finanzapi.repository.TransaccionRepository;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;

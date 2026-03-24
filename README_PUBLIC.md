@@ -1,6 +1,6 @@
-# 💰 Budget App — REST API
+# 💰 Finanz API
 
-> Evolución de la [versión CLI](#) hacia una **API REST completa con Spring Boot**, base de datos H2 embebida, JPA/Hibernate y tests de integración con contexto de Spring real. Misma lógica de negocio, arquitectura profesional.
+> Evolución de la [versión Finanz Core](#) hacia una **API REST completa con Spring Boot**, base de datos H2 embebida, JPA/Hibernate y tests de integración con contexto de Spring real. Misma lógica de negocio, arquitectura profesional.
 
 ---
 
@@ -54,7 +54,7 @@ Expone una API REST para gestionar transacciones financieras personales. Permite
 | **Java** | 21 |
 | **Spring Boot** | 4.0.3 |
 | **Spring Data JPA** | Repository pattern con Hibernate |
-| **H2 Database** | Base de datos embebida con persistencia en fichero (`./data/budgetapp`) |
+| **H2 Database** | Base de datos embebida con persistencia en fichero (`./data/finanz-api`) |
 | **Maven** | Gestión de dependencias y ciclo de build |
 | **JUnit 5** | Tests de integración con `@SpringBootTest` |
 
@@ -67,7 +67,7 @@ Los tests son **tests de integración reales** que arrancan el contexto completo
 ```java
 @SpringBootTest
 @ActiveProfiles("test")
-class BudgetappApplicationTests {
+class FinanzApiApplicationTests {
     // ...
 }
 ```
@@ -85,12 +85,12 @@ class BudgetappApplicationTests {
 
 ### Opción A: Probar en GitHub Codespaces (sin instalar nada, sin tarjeta)
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/fcomartin94/budgetapp)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/fcomartin94/finanz-api)
 
 **Guía para recruiters** — 3 pasos:
 
 1. **Abrir**: Clic en el botón de arriba → inicia sesión con GitHub si te lo pide
-2. **Arrancar**: En la terminal, ejecuta `./mvnw spring-boot:run` y espera a ver *"Started BudgetappApplication"*
+2. **Arrancar**: En la terminal, ejecuta `./mvnw spring-boot:run` y espera a ver *"Started FinanzApiApplication"*
 3. **Probar**: Pestaña **PORTS** (abajo) → puerto **8080** → **"Open in Browser"** → verás una página con enlaces para probar la API
 
 **No requiere tarjeta de crédito** — GitHub da 120 h/mes gratis a cuentas personales.
@@ -136,7 +136,7 @@ http://localhost:8080/h2-console
 
 | Campo | Valor |
 |-------|-------|
-| JDBC URL | `jdbc:h2:file:./data/budgetapp` |
+| JDBC URL | `jdbc:h2:file:./data/finanz-api` |
 | Username | `sa` |
 | Password | *(vacío)* |
 
@@ -174,7 +174,7 @@ curl http://localhost:8080/api/resumen/mes-actual
 - **Dos endpoints de registro**: `/transacciones` acepta el objeto completo (ideal para integraciones), `/transacciones/simple` valida y construye la entidad en el servicio (más seguro para uso directo desde cliente).
 - **Perfil de test aislado**: `application-test.properties` usa H2 en memoria con `ddl-auto=create-drop`, evitando interferencias con los datos de desarrollo.
 - **`ResponseEntity` explícito**: el controlador siempre devuelve el código HTTP correcto (`200`, `204`, `400`, `404`) en lugar de depender de comportamientos por defecto.
-- **Evolución desde la versión CLI**: la lógica de `BudgetService` es idéntica en concepto a la versión consola, lo que demuestra cómo una arquitectura limpia facilita migrar entre interfaces.
+- **Evolución desde la versión Finanz Core**: la lógica de `BudgetService` es idéntica en concepto a la versión consola, lo que demuestra cómo una arquitectura limpia facilita migrar entre interfaces.
 
 ---
 
@@ -183,8 +183,8 @@ curl http://localhost:8080/api/resumen/mes-actual
 ```
 src/
 └── main/
-    └── java/com/budgetapp/budgetapp/
-        ├── BudgetappApplication.java
+    └── java/com/finanzapi/
+        ├── FinanzApiApplication.java
         ├── controller/
         │   ├── BudgetController.java
         │   └── dto/
@@ -197,10 +197,10 @@ src/
             ├── Transaccion.java
             └── TipoTransaccion.java
 └── test/
-    └── java/com/budgetapp/budgetapp/
-        └── BudgetappApplicationTests.java
+    └── java/com/finanzapi/
+        └── FinanzApiApplicationTests.java
 ```
 
 ---
 
-> Este proyecto es la versión API de la [Budget App CLI](#). Ambas comparten la misma lógica de negocio y arquitectura en capas, evolucionando de persistencia CSV a JPA con base de datos relacional.
+> Este proyecto es la versión API de [Finanz Core](#). Ambas comparten la misma lógica de negocio y arquitectura en capas, evolucionando de persistencia CSV a JPA con base de datos relacional.

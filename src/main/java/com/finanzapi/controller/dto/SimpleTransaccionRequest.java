@@ -1,6 +1,6 @@
-package com.budgetapp.budgetapp.controller.dto;
+package com.finanzapi.controller.dto;
 
-import com.budgetapp.budgetapp.model.TipoTransaccion;
+import com.finanzapi.model.TipoTransaccion;
 
 public class SimpleTransaccionRequest {
     private String descripcion;

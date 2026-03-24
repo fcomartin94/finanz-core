@@ -1,7 +1,7 @@
-# Fly.io - BudgetApp API
+# Fly.io - Finanz API
 # Despliega con: fly launch (primera vez) o fly deploy
 
-app = "budgetapp-api"
+app = "finanz-api"
 
 [build]
 

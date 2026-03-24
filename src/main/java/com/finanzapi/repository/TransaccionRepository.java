@@ -1,7 +1,7 @@
-package com.budgetapp.budgetapp.repository;
+package com.finanzapi.repository;
 
-import com.budgetapp.budgetapp.model.TipoTransaccion;
-import com.budgetapp.budgetapp.model.Transaccion;
+import com.finanzapi.model.TipoTransaccion;
+import com.finanzapi.model.Transaccion;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

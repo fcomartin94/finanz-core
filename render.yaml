@@ -1,10 +1,10 @@
-# Render Blueprint - BudgetApp API
+# Render Blueprint - Finanz API
 # Conecta tu repo en https://dashboard.render.com y Render detectará este archivo
 
 services:
   - type: web
     runtime: docker
-    name: budgetapp-api
+    name: finanz-api
     region: oregon
 
     envVars:
